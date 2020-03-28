@@ -87,7 +87,7 @@ jobs:
       run: |
         cd openwrt
         echo -e "10 thread compile"
-        make -j10 || make -j1 V=s
+        make -j10
         echo "::set-output name=status::success"
 
     - name: Upload bin directory
